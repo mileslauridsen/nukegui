@@ -24,7 +24,6 @@ class NukeguiUI(QTabWidget):
         tools_layout_left = QVBoxLayout()
 
         tools_layout.addLayout(tools_layout_left)
-        #send_layout.addLayout(send_layout_right)
 
         # Buttons
         self.tool01_button = QPushButton("tool01")
@@ -33,23 +32,6 @@ class NukeguiUI(QTabWidget):
         tools_layout.addWidget(self.tool01_button)
         tools_layout.addWidget(self.tool02_button)
 
-        # received_layout = QHBoxLayout()
-        # received_layout_left = QVBoxLayout()
-        # received_layout_left.addWidget(history_label)
-        # received_layout_left.addWidget(self.history_table_widget)
-        # received_action_layout = QHBoxLayout()
-        # received_action_layout.addWidget(self.paste_push_button)
-        # received_action_layout.addWidget(self.received_close_push_button)
-        # received_layout_left.addLayout(received_action_layout)
-        #
-        # received_layout_right = QVBoxLayout()
-        # received_layout_right.addWidget(notes_label)
-        # received_layout_right.addWidget(self.received_notes_text_edit)
-
-        # received_layout.addLayout(received_layout_left)
-        # received_layout.addLayout(received_layout_right)
-
         self.tools_main_widget.setLayout(tools_layout)
-        # self.received_main_widget.setLayout(received_layout)
 
         self.addTab(self.tools_main_widget, "Tools")
