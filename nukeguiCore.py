@@ -34,7 +34,8 @@ def start():
     start.panel.show()
 
 
-app = QApplication(sys.argv)
-panel = NukeguiCore()
-panel.show()
-app.exec_()
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    panel = NukeguiCore()
+    panel.show()
+    app.exec_()
